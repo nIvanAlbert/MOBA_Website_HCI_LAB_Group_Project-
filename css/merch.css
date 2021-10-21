@@ -1,0 +1,468 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container {
+	height: 100%;
+	background-color: #07121a;
+}
+.container .navbar {
+	height: 50px;
+	width: 100%;
+	padding-left: 40px;
+	background-color: #07121a;
+	padding-right: 40px;
+	white-space: nowrap;
+	display: inline-block;
+	top: 10px;
+	position: absolute;
+	z-index: 100;
+	/* overflow: hidden; */
+}
+.container .navbar .logo {
+	height: 50px;
+	display: flex;
+	float: left;
+	margin-right: 30px;
+	margin-top: 5px;
+}
+.container .navbar .burger {
+	display: none;
+}
+.container .navbar .logo a {
+	height: 90%;
+	width: 45px;
+}
+.container .navbar .logo img {
+	height: 90%;
+}
+.container .navbar .menu {
+	display: flex;
+	float: right;
+	height: 50px;
+}
+.container .navbar .menu a, .container .navbar .menu .dropdown .dropbtn {
+	cursor: pointer;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	color: white;
+}
+.container .navbar .menu .drop-content {
+	display: none;
+	background-color: #07121a;
+	z-index: 100;
+}
+.container .navbar .menu .dropdown .dropbtn {
+	border: none;
+	outline: none;
+	background-color: inherit;
+}
+.container .navbar .menu a:hover, .container .navbar .menu .dropdown:hover {
+	background-color: #2e31924f;
+}
+.container .navbar .menu .dropdown:hover .drop-content, .container .navbar .menu .dropdown:hover .drop-content a {
+	display: block;
+	/* z-index: 80; */
+}
+.container .navbar .menu .registration {
+	background-color: #e8a71b;
+}
+.container .navbar .menu .registration:hover {
+	background-color: #e86d1b;
+}
+/*----------------------------------------------------------------------------*/
+
+.container .banner {
+	display: block;
+	position: relative;
+	height: 200px;
+	width: 100%;
+}
+.container .banner img {
+	position: relative;
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	z-index: 50;
+	/* opacity: 0.6; */
+}
+.container .banner .bannerCaption {
+	/* color: white; */
+	font-size: 40px;
+	font-style: italic;
+	font-weight: bold;
+	display: block;
+	position: relative;
+	text-align: center;
+	height: 200px;
+	z-index: 80;
+	top: -100px;
+}
+/*----------------------------------------------------------------------------------------------*/
+
+.container .storeSection {
+	color: white;
+}
+/* .container .storeSection .notch{
+    position: absolute;
+    width: 100%;
+    top: 180px;
+
+}
+.container .storeSection .notch::before,
+.container .storeSection .notch::after{
+    content:'';
+    position: absolute;
+    background-color: red;
+    border-bottom: 20px solid red;
+    height: 20px;
+    width: 20%;
+    z-index: 80;
+}
+.container .storeSection .notch::after{
+    left: 80%;
+}
+.container .storeSection .notch::before{
+    right: 80%;
+} */
+
+.container .storeSection .apparelsContent {
+	display: inline-block;
+	height: 450px;
+	overflow: hidden;
+	width: 100%;
+	padding-left: 230px;
+	padding-right: 230px;
+}
+.container .storeSection .apparelsContent.expand {
+	height: auto;
+}
+.container .storeSection .apparelsContent p {
+	display: inline-block;
+	margin: 20px;
+}
+.container .storeSection .apparelsContent .sectionName {
+	font-size: 40px;
+	font-weight: bold;
+	font-style: italic;
+}
+.container .storeSection .apparelsContent .downArrow {
+	background-color: #e8a71b;
+	text-align: center;
+	border-radius: 30px;
+	position: relative;
+	z-index: 80;
+	padding: 10px;
+	width: 100px;
+	float: right;
+	cursor: pointer;
+}
+.container .storeSection .apparelsContent .productCard {
+	height: 350px;
+	width: 200px;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+	margin-right: 10px;
+}
+.container .storeSection .apparelsContent .productCard img {
+	height: 70%;
+	width: 100%;
+	background-color: #F2F2F2;
+	object-fit: contain;
+}
+.container .storeSection .apparelsContent .productCard p {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+.container .storeSection .apparelsContent .productCard .productName {
+	font-size: 14px;
+	font-weight: bold;
+}
+.container .storeSection .apparelsContent .productCard button {
+	height: 30px;
+	width: 60px;
+	border-style: none;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #e8a71b;
+}
+.container .storeSection .apparelsContent .productCard button:hover {
+	background-color: #e86d1b;
+}
+.container .storeSection .collectablesContent {
+	display: inline-block;
+	height: 450px;
+	overflow: hidden;
+	background-color: #121e27;
+	width: 100%;
+	padding-left: 230px;
+	padding-right: 230px;
+}
+.container .storeSection .collectablesContent.expand {
+	height: auto;
+}
+.container .storeSection .collectablesContent p {
+	display: inline-block;
+	margin: 20px;
+}
+/* .container .storeSection .collectablesContent .downArrow{
+    display: inline-block;
+} */
+
+.container .storeSection .collectablesContent .sectionName {
+	font-size: 40px;
+	font-weight: bold;
+	font-style: italic;
+}
+.container .storeSection .collectablesContent .downArrow {
+	background-color: #e8a71b;
+	text-align: center;
+	border-radius: 30px;
+	padding: 10px;
+	width: 100px;
+	float: right;
+	position: relative;
+	z-index: 80;
+	cursor: pointer;
+}
+.container .storeSection .collectablesContent .productCard {
+	height: 350px;
+	width: 200px;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+	margin-right: 10px;
+}
+.container .storeSection .collectablesContent .productCard img {
+	height: 70%;
+	width: 100%;
+	background-color: #F2F2F2;
+	object-fit: contain;
+}
+.container .storeSection .collectablesContent .productCard p {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+.container .storeSection .collectablesContent .productCard .productName {
+	font-size: 14px;
+	font-weight: bold;
+}
+.container .storeSection .collectablesContent .productCard button {
+	height: 30px;
+	width: 60px;
+	border-style: none;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #e8a71b;
+}
+.container .storeSection .collectablesContent .productCard button:hover {
+	background-color: #e86d1b;
+}
+.container .footer {
+	height: 50px;
+	width: 100%;
+	/* position: absolute; */
+	background-color: #07121a;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	padding-bottom: 17.5px;
+	padding-top: 17.5px;
+	/* bottom: 0; */
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+	.container .navbar .logo {
+		height: 50px;
+		display: flex;
+		float: left;
+		margin-right: 0px;
+		margin-top: 5px;
+	}
+	.container .navbar .menu a, .container .navbar .menu .dropdown .dropbtn {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.container .navbar .menu .dropdown.expand {
+		background-color: #2e31924f;
+	}
+	.container .navbar .menu .dropdown.expand .drop-content, .container .navbar .menu .dropdown.expand .drop-content a {
+		display: block;
+	}
+	.container .storeSection .apparelsContent {
+		padding-left: 10%;
+		padding-right: 10%;
+		height: 405px;
+	}
+	.container .storeSection .apparelsContent .productCard {
+		height: 300px;
+		width: 191px;
+	}
+	.container .storeSection .apparelsContent .productCard .productName {
+		font-size: 12px;
+	}
+	.container .storeSection .apparelsContent .productCard button {
+		height: 20px;
+		width: 60px;
+	}
+	.container .storeSection .collectablesContent {
+		padding-left: 10%;
+		padding-right: 10%;
+		height: 405px;
+	}
+	.container .storeSection .collectablesContent .productCard {
+		height: 300px;
+		width: 191px;
+	}
+	.container .storeSection .collectablesContent .productCard .productName {
+		font-size: 12px;
+	}
+	.container .storeSection .collectablesContent .productCard button {
+		height: 20px;
+		width: 60px;
+	}
+	.container .banner {
+		height: 400px;
+	}
+	.container .banner img {
+		height: 400px;
+	}
+	.container .banner .bannerCaption {
+		/* color: white; */
+		font-size: 60px;
+		top: -200px;
+	}
+}
+@media screen and (max-width: 699px) {
+	.container .navbar .menu {
+		display: none;
+		text-align: center;
+	}
+	.container .navbar .burger {
+		display: inline-block;
+		margin-top: 10px;
+		float: right;
+		width: 30px;
+		height: 30px;
+		border-style: solid;
+		border-color: #e8a71b;
+		z-index: 110;
+	}
+	.container .navbar .burger .pat {
+		height: 5px;
+		width: 25px;
+		background-color: #e8a71b;
+		flex-direction: column;
+		margin-bottom: 5px;
+		margin-right: 0px;
+	}
+	.container .navbar .menu.expand {
+		display: block;
+		margin-top: 0px;
+		height: 150px;
+		width: 100%;
+		background-color: #07121a;
+	}
+	.container .navbar .menu.expand .dropdown .dropbtn {
+		display: none;
+	}
+	.container .navbar .menu.expand .dropdown .drop-content, .container .navbar .menu.expand .dropdown .drop-content a {
+		display: block;
+	}
+	.registration {
+		display: block;
+	}
+	.container .storeSection .apparelsContent {
+		padding-left: 10%;
+		padding-right: 10%;
+		height: 300px;
+	}
+	.container .storeSection .apparelsContent .productContainer {
+		margin: auto;
+		text-align: center;
+	}
+	.container .storeSection .apparelsContent .sectionName {
+		font-size: 20px;
+	}
+	.container .storeSection .apparelsContent .downArrow {
+		height: 20px;
+		font-size: 15px;
+		padding-top: 0%;
+	}
+	.container .storeSection .apparelsContent .productCard {
+		height: 250px;
+		width: 80px;
+	}
+	.container .storeSection .apparelsContent .productCard img {
+		height: 50%;
+		width: 100%;
+		background-color: #F2F2F2;
+		object-fit: contain;
+	}
+	.container .storeSection .apparelsContent .productCard .productName {
+		font-size: 12px;
+	}
+	.container .storeSection .apparelsContent .productCard .price {
+		font-size: 10px;
+		margin: 0px;
+	}
+	.container .storeSection .apparelsContent .productCard button {
+		height: 14px;
+		width: 30px;
+		font-size: 10px;
+	}
+	.container .storeSection .collectablesContent {
+		padding-left: 10%;
+		padding-right: 10%;
+		height: 250px;
+	}
+	.container .storeSection .collectablesContent .productContainer {
+		margin: auto;
+		text-align: center;
+	}
+	.container .storeSection .collectablesContent .sectionName {
+		font-size: 20px;
+		margin: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.container .storeSection .collectablesContent .downArrow {
+		height: 20px;
+		font-size: 15px;
+		padding-top: 0px;
+		margin: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.container .storeSection .collectablesContent .productCard {
+		height: 200px;
+		width: 80px;
+	}
+	.container .storeSection .collectablesContent .productCard img {
+		height: 50%;
+		width: 100%;
+		background-color: #F2F2F2;
+		object-fit: contain;
+	}
+	.container .storeSection .collectablesContent .productCard .productName {
+		font-size: 12px;
+	}
+	.container .storeSection .collectablesContent .productCard .price {
+		font-size: 10px;
+		margin: 0px;
+	}
+	.container .storeSection .collectablesContent .productCard button {
+		height: 14px;
+		width: 30px;
+		font-size: 10px;
+	}
+}

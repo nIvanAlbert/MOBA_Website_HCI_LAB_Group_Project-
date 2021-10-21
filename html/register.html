@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<script src="https://code.jquery.com/jquery-3.6.0.js">
+	</script>
+	<link href="../css/register.css" rel="stylesheet">
+	<script src="../JS/formvalidation.js">
+	</script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<a href="../html/home.html"><img alt="DOTO2-LOGO" src="../img/logo.png"></a>
+		</div>
+		<div class="background"><img alt="" src="../img/riot_desktop_background_2x.jpg"></div>
+		<div class="reg-form">
+			<form action="" id="regForm" name="regForm" onsubmit="return(validateForm());">
+				<p class="title">Register</p>
+				<div class="content">
+					<label for="username">Username</label> <input id="username" name="username" placeholder="Username" type="text">
+				</div>
+				<div class="content">
+					<label for="email">Email Address</label> <input id="email" name="email" placeholder="Email Address" type="text">
+				</div>
+				<div class="content">
+					<label for="password">Password</label> <input id="password" name="password" placeholder="Password" type="password">
+				</div>
+				<div class="content">
+					<label for="region">Region</label> <select id="region" name="region">
+						<option value="0">
+							Select region
+						</option>
+						<option value="North Asia">
+							North Asia
+						</option>
+						<option value="Central Asia">
+							Central Asia
+						</option>
+						<option value="Western Asia">
+							Western Asia
+						</option>
+						<option value="South Asia">
+							South Asia
+						</option>
+						<option value="East Asia">
+							East Asia
+						</option>
+						<option value="Southeast Asia">
+							Southeast Asia
+						</option>
+					</select>
+				</div>
+				<div class="content">
+					<label for="dob">Date Of Birth</label> <input id="dob" name="dob" type="date">
+				</div><input id="register" type="submit" value="submit">
+			</form>
+		</div>
+		<div class="footer">
+			<p>Dawn Of The Olympus 2 2021</p>
+		</div>
+	</div>
+</body>
+</html>

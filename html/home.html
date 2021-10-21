@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0", shrink-to-fit=no >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/home.css">
+    <title>HOME</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="burger">
+                <div class="pat"></div>
+                <div class="pat"></div>
+                <div class="pat"></div>
+            </div>
+            <div class="logo">
+                <a href="home.html"><img src="../img/logo.png" alt="DOTO2-LOGO"></a>
+            </div>
+            <div class="menu">
+                <a href="home.html">HOME</a>
+                <div class="dropdown">
+                    <button class="dropbtn">DISCOVER V</i></button>
+                    <div class="drop-content">
+                        <a href="heroes.html">HEROES</a>
+                        <a href="mechanic.html">MECHANICS</a>
+                    </div>
+                </div>
+                <a href="merch.html">MERCHANDISE</a>
+                <a href="register.html" class="registration">REGISTER</a>
+            </div>
+        </div>
+
+        <div class="imageslider">
+            <p class="title">DAWN OF THE OLYMPUS</p>
+            <p class="title" id="number">2</p>
+            <div class="sliders">
+                <img src="../img/imgHeader1.jpg" class="active" alt="img1">
+                <img src="../img/imgHeader2.jpg" alt="img2">
+                <img src="../img/imgHeader3.jpg" alt="img3">
+            </div>
+        </div>
+        <div class="content1">
+            <h2>CHOOSE YOUR<h2>
+            <h1>HERO TYPES</h1>
+            <div class="attributes-container" >
+                <div class="attributes" id="str">
+                    <div id="strb" ></div>
+                    <img src="../img/role_icon1.png" class="iStr" alt="STR">
+                    <p>STRENGTH</p>
+                </div>
+                <div class="attributes" id="agi">
+                    <div id="agib" ></div>
+                    <img src="../img/role_icon3.png" alt="STR">
+                    <p>AGILITY</p>
+                </div>
+                <div class="attributes" id="int">
+                    <div id="intb" ></div>
+                    <img src="../img/role_icon2.png" alt="STR">
+                    <p>INTELLIGENCE</p>
+                </div>
+            </div>
+            <div class="explaination-container">
+                <div class="str" id="str">
+                    <div class="text">
+                        <p class="quotes" id="q1">"The best offense is defense"</p>
+                        <p class="notes" id="n1">The strength heroes excel at absorbing damage. They walk in the frontline to protect their teammates from enemy.However, their movement are slow</p>
+                    </div>
+                    <div class="hero-img" id="h1">
+                        <img src="../img/mars.png" alt="Mars" id="hero1">
+                        <!-- <a href="" class="q">View profile</a> -->
+                    </div>
+                    
+                </div>
+                <div class="agi" id="agi">
+                    <div class="text">
+                        <p class="quotes" id="q2">"There's a lot of stories about the Monkey King. Some of 'em are even true"</p>
+                        <p class="notes" id="n2">The agility heros excel in mobility, they can easily get behind the enmy backline to attack.</p>
+                    </div>
+                    <div class="hero-img" id="h2"><img src="../img/Monkey_King.png" alt="Mongkey King" id="hero2"></div>
+                </div>
+                <div class="int" id="int">
+                    <div class="text">
+                        <p class="quotes" id="q3">"Mind the power of magic, Mortals"</p>
+                        <p class="notes" id="n3">The intelligence hero excel in crowdcontrol. They can easily maniipulate the flow of battle throught their magic.</p>
+                    </div>
+                    <div class="hero-img" id="h3"><img src="../img/Zeus.png" alt="Zeus" id="hero3"></div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="content2">
+            <img src="../img/ruin-HP.jpeg" alt="">
+            <div class="lore-container">
+                <h1>DEFEND THE OLYMPUS</h1>
+                <p>"The olympus has fall and become a ruins. But, the dawn has come, we can still save Olympus. Defend whats left of Olympus and protect the realm as Gods."</p>
+                <a href="mechanic.html">Find out more</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Dawn Of The Olympus 2 2021</p>
+        </div>
+
+    </div>
+</body>
+</html>
+<script src="../JS/slider.js"></script>
+<script src="../JS/type.js"></script>
+<script src="../JS/burgerDrop.js"></script>

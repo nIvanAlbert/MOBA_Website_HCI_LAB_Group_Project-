@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width" name="viewport">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../css/heroes.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.js">
+	</script>
+	<title>Heroes</title>
+</head>
+<body>
+    <div class="heroBackFilter"></div>
+	<div class="container">
+		<div class="navbar">
+			<div class="burger">
+				<div class="pat"></div>
+				<div class="pat"></div>
+				<div class="pat"></div>
+			</div>
+			<div class="logo">
+				<a href="home.html"><img alt="DOTO2-LOGO" src="../img/logo.png"></a>
+			</div>
+			<div class="menu">
+				<a href="home.html">HOME</a>
+				<div class="dropdown">
+					<button class="dropbtn">DISCOVER V</button>
+					<div class="drop-content">
+						<a href="heroes.html">HEROES</a> <a href="mechanic.html">MECHANICS</a>
+					</div>
+				</div><a href="merch.html">MERCHANDISE</a> <a class="registration" href="register.html">REGISTER</a>
+			</div>
+		</div>
+		<div class="box">
+			<div class="attributeBar">
+				<div class="attributesContainer" id="viewStr"><img alt="" src="../img/role_icon1.png"></div>
+				<div class="attributesContainer" id="viewAgi"><img alt="" src="../img/role_icon3.png"></div>
+				<div class="attributesContainer" id="viewInt"><img alt="" src="../img/role_icon2.png"></div>
+			</div>
+			<div class="heroesContainer">
+				<p class="title">Heroes</p>
+				<div class="cardContainer">
+					<div class="heroesCard str" id="heroMars">
+						<img alt="" src="../img/mars.png">
+						<p class="heroesName">Mars</p>
+					</div>
+					<div class="heroesCard agi" id="heroWukong">
+						<img alt="" src="../img/Monkey_King.png">
+						<p class="heroesName">Monkey King</p>
+					</div>
+					<div class="heroesCard int" id="heroZeus">
+						<img alt="" src="../img/Zeus.png">
+						<p class="heroesName">Zeus</p>
+					</div>
+				</div>
+			</div>
+			<div class="heroDetail" id="mars">
+				<div class="heroDescription">
+					<h1>Mars</h1>
+					<p>The warrior deity Mars thrives in the heart of strife, guarded by the bulk of a deadly shield as he skewers enemies with his legendary spear. He revels in facing opponents in an arena ringed with loyal spearmen—who guarantee that no one escapes and that whatever odds he's facing, the god of war can dictate the terms of battle knowing the crowd is forever on his side.</p>
+					<div class="heroTopAttributes">
+						<div class="heroStats">
+							<p class="hp">Hp: 620 + 2.3</p>
+							<p class="mana">Mana: 300 + 1.5</p>
+						</div>
+						<div class="heroAttribute">
+							<div class="heroAttributeSection">
+								<img src="../img/role_icon1.png">
+								<p>23 +3.4</p>
+							</div>
+							<div class="heroAttributeSection">
+								<img src="../img/role_icon3.png">
+								<p>20 + 1.7</p>
+							</div>
+							<div class="heroAttributeSection">
+								<img src="../img/role_icon2.png">
+								<p>20 + 2.2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="heroImages">
+					<div class="skill" id="skills1Mars">
+						<div>
+							<h1>Spear of Mars</h1>
+							<p>Mars throws his legendary Spear with deadly precision, damaging each enemy unit it strikes. The first enemy hero it hits is skewered on the spear, pushing it back. If a skewered hero hits a tree, building, or cliff, they will be impaled to it and stunned.</p>
+						</div>
+						<div class="abilityValue">
+							<p>DAMAGE: 100 / 175 / 250 / 325</p>
+							<p>CAST RANGE: 900 / 1000 / 1100 / 1200</p>
+							<p>STUN DURATION: 1.6 / 2.0 / 2.4 / 2.8</p>
+							<p>COOLDOWN: 15s</p>
+							<p>MANA: 110 / 120 / 130 / 140</p>
+						</div>
+					</div>
+					<div class="skill" id="skills2Mars">
+						<div>
+							<h1>Bulwark</h1>
+							<p>Mars throws his legendary Spear with deadly precision, damaging each enemy unit it strikes. The first enemy hero it hits is skewered on the spear, pushing it back. If a skewered hero hits a tree, building, or cliff, they will be impaled to it and stunned.</p>
+						</div>
+						<div class="abilityValue">
+							<p>FRONT REDUCTION: 40% / 50% / 60% / 70%</p>
+							<p>SIDE REDUCTION: 20% / 25% / 30% / 35%</p>
+							<p>SPEED PENALTY WHEN ACTIVE: 20%</p>
+						</div>
+					</div>
+					<div class="skill" id="skills3Mars">
+						<div>
+							<h1>God's Rebuke</h1>
+							<p>Mars smashes enemies in front of him with his shield, knocking them back and damaging them with a critical hit based on his attack. Bonus damage is added when hitting heroes. Has True Strike.</p>
+						</div>
+						<div class="abilityValue">
+							<p>DISTANCE: 500</p>
+							<p>KNOCKBACK SLOW: 40%</p>
+							<p>KNOCKBACK SLOW DURATION: 2.0</p>
+							<p>BONUS DAMAGE VS HEROES: 20 / 25 / 30 / 35</p>
+						</div>
+					</div>
+					<div class="skill" id="skills4Mars">
+						<div>
+							<h1>Arena Of Blood</h1>
+							<p>After a short formation time, Mars summons an arena lined with the undead warriors of the Ash Legion, who block enemy attacks and movement. Enemy heroes near the inside edge of the arena will be attacked by spears, dealing damage and knocking them back.</p>
+						</div>
+						<div class="abilityValue">
+							<p>DURATION: 5.0 / 6.0 / 7.0</p>
+							<p>RADIUS: 550</p>
+							<p>SPEAR DAMAGE: 100 / 160 / 220</p>
+							<p>FORMATION TIME: 0.3</p>
+						</div>
+					</div>
+					<div class="heroVideo">
+						<video autoplay="" class="heroPotrait" loop="" muted preload="auto"><source src="../video/mars.webm" type="video/webm"></video>
+					</div>
+					<div id="circle"></div>
+                    <div id="circle2"></div>
+					<h3>ABILITIES</h3>
+					<div class="heroSkill"><img id="skill1Mars" src="../img/mars_spear.png"> <img id="skill2Mars" src="../img/mars_bulwark.png"> <img id="skill3Mars" src="../img/mars_gods_rebuke.png"> <img id="skill4Mars" src="../img/mars_arena_of_blood.png"></div>
+				</div>
+			</div>
+			<div class="heroDetail" id="wukong">
+				<div class="heroDescription">
+					<h1>Monkey King</h1>
+					<p>For a change, Sun Wukong fulfilled his oath to the gods with honor, and atoned for the sins of past insurrections. The acolyte, much learned in hardships, was returned to his home temple, relic in hand; and Wukong-finding himself for the first time in proper standing with any gods of consequence-was content for a short while to give up his old thirst for adventure and glory. But the Monkey King was born for mischief...and offending the gods never gets old.</p>
+					<div class="heroTopAttributes">
+						<div class="heroStats">
+							<p class="hp">Hp: 560 + 2.8</p>
+							<p class="mana">Mana: 315 + 1.0</p>
+						</div>
+						<div class="heroAttribute">
+							<div class="heroAttributeSection">
+								<img src="../img/role_icon1.png">
+								<p>18 +2.8</p>
+							</div>
+							<div class="heroAttributeSection">
+								<img src="../img/role_icon3.png">
+								<p>22 + 3.7</p>
+							</div>
+							<div class="heroAttributeSection">
+								<img src="../img/role_icon2.png">
+								<p>20 + 1.8</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="heroImages">
+					<div class="skill" id="skills1Wukong">
+						<div>
+							<h1>Boundless Strike</h1>
+							<p>Monkey King enlarges his staff and slams it against the ground, stunning enemies in a line and damaging them with a critical hit based on his attack. Has True Strike.</p>
+						</div>
+						<div class="abilityValue">
+							<p>STUN DURATION: 1.0 / 1.2 / 1.4 / 1.6</p>
+							<p>CRITICAL DAMAGE: 150% / 175% / 200% / 225%</p>
+							<p>DISTANCE: 1100</p>
+						</div>
+					</div>
+					<div class="skill" id="skills2Wukong">
+						<div>
+							<h1>Tree Dance</h1>
+							<p>Monkey King jumps to a tree and perches atop it. While perched, he gains the Primal Spring ability-a channeled leap attack. If Monkey King's tree is destroyed, he falls and is stunned for 4 seconds. Taking damage from player controlled units or Roshan while on the ground puts Tree Dance on cooldown.</p>
+						</div>
+						<div class="abilityValue">
+							<p>DISTANCE: 1000</p>
+							<p>DAMAGE COOLDOWN: 3.0</p>
+							<p>PRIMAL SPRING DAMAGE: 140 / 210 / 280 / 350</p>
+							<p>PRIMAL SPRING SLOW: 20% / 40% / 60% / 80%</p>
+						</div>
+					</div>
+					<div class="skill" id="skills3Wukong">
+						<div>
+							<h1>Jingu Mastery</h1>
+							<p>Monkey King's attacks awaken the Jingu Bang's power. Upon the fourth hit on the same enemy hero, Monkey King earns four charged attacks that have bonus damage and lifesteal.</p>
+						</div>
+						<div class="abilityValue">
+							<p>REQUIRED HITS: 4</p>
+							<p>p&gt;COUNTER DURATION: 7 / 8 / 9 / 10</p>CHARGES: 4 BONUS DAMAGE: 40 / 70 / 100 / 130 BONUS LIFESTEAL: 15% / 30% / 45% / 60%
+						</div>
+					</div>
+					<div class="skill" id="skills4Wukong">
+						<div>
+							<h1>Wukong's Command</h1>
+							<p>Monkey King creates a circular formation of soldiers that spread out from his position. If Monkey King leaves the area his soldiers disperse. The soldiers have Monkey King's attack and only target heroes. Monkey King is granted bonus armor for the spell's duration.</p>
+						</div>
+						<div class="abilityValue">
+							<p>BONUS ARMOR: 12 / 18 / 24</p>
+							<p>SOLDIER ATK SPEED: 1.1</p>
+							<p>DURATION: 13.0</p>
+							<p>SCEPTER SOLDIER SPAWN INTERVAL: 4.0</p>
+							<p>SCEPTER SOLDIER DURATION: 12.0</p>
+						</div>
+					</div>
+					<div class="heroVideo">
+						<video autoplay="" class="heroPotrait" id="monkeyVideo" loop="" muted preload="auto"><source src="../video/monkey_king.webm" type="video/webm"></video>
+					</div>
+                    <div id="circle"></div>
+                    <div id="circle2"></div>
+                    <h3>ABILITIES</h3>
+					<div class="heroSkill"><img id="skill1Wukong" src="../img/monkey_king_boundless_strike.png"> <img id="skill2Wukong" src="../img/monkey_king_tree_dance.png"> <img id="skill3Wukong" src="../img/monkey_king_jingu_mastery.png"> <img id="skill4Wukong" src="../img/monkey_king_wukongs_command.png"></div>
+				</div>
+			</div>
+			<div class="heroDetail" id="zeus">
+				<div class="heroDescription">
+					<h1>Zeus</h1>
+					<p>Lord of Heaven, father of gods, Zeus treats all the Heroes as if they are his rambunctious, rebellious children. After being caught unnumbered times in the midst of trysts with countless mortal women, his divine wife finally gave him an ultimatum: 'If you love mortals so much, go and become one. If you can prove yourself faithful, then return to me as my immortal husband. Otherwise, go and die among your creatures.' Zeus found her logic (and her magic) irrefutable, and agreed to her plan. He has been on his best behavior ever since, being somewhat fonder of immortality than he is of mortals. But to prove himself worthy of his eternal spouse, he must continue to pursue victory on the field of battle.</p>
+					<div class="heroTopAttributes">
+						<div class="heroStats">
+							<p class="hp">Hp: 580 + 1.9</p>
+							<p class="mana">Mana: 339 + 1.1</p>
+						</div>
+						<div class="heroAttribute">
+							<div class="heroAttributeSection">
+								<img src="../img/role_icon1.png">
+								<p>19 + 2.1</p>
+							</div>
+							<div class="heroAttributeSection">
+								<img src="../img/role_icon3.png">
+								<p>11 + 1.2</p>
+							</div>
+							<div class="heroAttributeSection">
+								<img src="../img/role_icon2.png">
+								<p>22 + 3.3</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="heroImages">
+					<div class="skill" id="skills1Zeus">
+						<div>
+							<h1>Arc Lightning</h1>
+							<p>Hurls a bolt of lightning that leaps through nearby enemy units.</p>
+						</div>
+						<div class="abilityValue">
+							<p>DAMAGE: 75 / 100 / 125 / 150</p>
+							<p>JUMPS: 5 / 7 / 9 / 15</p>
+						</div>
+					</div>
+					<div class="skill" id="skills2Zeus">
+						<div>
+							<h1>Lightning Bolt</h1>
+							<p>Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a 750 radius. Can be cast on the ground, affecting the closest enemy hero in 325 range.</p>
+						</div>
+						<div class="abilityValue">
+							<p>Damage: 125 / 200 / 275 / 350</p>
+							<p>SIGHT RADIUS: 750</p>
+							<p>SIGHT DURATION:4.5</p>
+							<p>CAST RANGE: 700 / 750 / 800 / 850</p>
+						</div>
+					</div>
+					<div class="skill" id="skills3Zeus">
+						<div>
+							<h1>Static Field</h1>
+							<p>Zeus shocks any enemy hit by his abilities, causing damage proportional to their current health.</p>
+						</div>
+						<div class="abilityValue">
+							<p>HEALTH REDUCTION: 4.0% / 6.0% / 8.0% / 10.0%</p>
+						</div>
+					</div>
+					<div class="skill" id="skills4Zeus">
+						<div>
+							<h1>Thundergod's Wrath</h1>
+							<p>Strikes all enemy heroes with a bolt of lightning, no matter where they may be. Thundergod's Wrath also provides True Sight around each hero struck. If an enemy hero is invisible, it takes no damage, but the True Sight is still created at that hero's location.</p>
+						</div>
+						<div class="abilityValue">
+							<p>TRUE SIGHT RADIUS: 500</p>
+							<p>DURATION: 3.0</p>
+							<p>DAMAGE: 300 / 400 / 500</p>
+						</div>
+					</div>
+					<div class="heroVideo">
+						<video autoplay="" class="heroPotrait" loop="" muted preload="auto"><source src="../video/zuus.webm" type="video/webm"></video>
+					</div>
+                    <div id="circle"></div>
+                    <div id="circle2"></div>
+                    <h3>ABILITIES</h3>
+					<div class="heroSkill"><img id="skill1Zeus" src="../img/zuus_arc_lightning.png"> <img id="skill2Zeus" src="../img/zuus_lightning_bolt.png"> <img id="skill3Zeus" src="../img/zuus_static_field.png"> <img id="skill4Zeus" src="../img/zuus_thundergods_wrath.png"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../JS/heroes.js">
+	</script> 
+	<script src="../JS/burgerDrop.js">
+	</script>
+</body>
+</html>
